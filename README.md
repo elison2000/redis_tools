@@ -19,6 +19,26 @@ v1.2.1
 
 # 使用说明
 
+## rma 
+分析redis rdb文件，输出redis内存统计报表，支持前缀分析，统计结果支持json文件、html、数据库等多种格式。
+```
+Usage of ./rma:
+  -create-time string
+        创建时间(可选)
+  -depth int
+        前缀分析最大深度，取值范围：1-5 (default 3)
+  -inst-id int
+        实例id
+  -n int
+        返回前n个key,取值范围：1-100 (default 10)
+  -o string
+         输出到：std-标准输出, json-result.json, html-result.html, db-数据库 (default "std")
+  -s string
+        前缀分析使用的分隔符 (default ":")
+  -sharding-id string
+        分片id(可选)
+```
+
 ## find_big_keys
 
 根据match参数模糊搜索key名，找到占用内存（估算值）大于100KB（可通过size参数修改）的key，保存到csv文件。
