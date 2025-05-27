@@ -1,6 +1,6 @@
 # redis_tools
 # 使用场景
-
+- rdb内存分析
 - 模糊查找key
 - 查找bigkey
 - 查找没有设置过期时间的key
